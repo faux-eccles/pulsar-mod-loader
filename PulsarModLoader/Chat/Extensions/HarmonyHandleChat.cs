@@ -267,7 +267,7 @@ namespace PulsarModLoader.Chat.Extensions
             */
             List<CodeInstruction> targetSequence = new List<CodeInstruction>()
             {
-                new CodeInstruction(OpCodes.Brfalse_S),
+                new CodeInstruction(OpCodes.Brfalse),
                 new CodeInstruction(OpCodes.Ldloc_S),
                 new CodeInstruction(OpCodes.Ldstr),
                 new CodeInstruction(OpCodes.Ldc_I4_0),

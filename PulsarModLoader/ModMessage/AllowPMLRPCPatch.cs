@@ -23,7 +23,7 @@ namespace PulsarModLoader.ModMessages
         {
             List<CodeInstruction> targetSequence = new List<CodeInstruction>()
             {
-                new CodeInstruction(OpCodes.Brfalse_S),
+                new CodeInstruction(OpCodes.Brfalse),
                 new CodeInstruction(OpCodes.Ldc_I4_1),
                 new CodeInstruction(OpCodes.Stloc_S),
                 new CodeInstruction(OpCodes.Ldloc_S),
