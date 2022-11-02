@@ -186,7 +186,7 @@ namespace PulsarInjector
             InjectionTools.PatchMethod(targetAssemblyPath, "PLGlobal", "Start", typeof(LoggingInjections), "LoggingCleanup");
 
             Logger.Info("=== Injecting Harmony Initialization ===");
-            InjectionTools.PatchMethod(targetAssemblyPath, "PLGlobal", "Awake", typeof(HarmonyInjector), "InitializeHarmony");
+            InjectionTools.PatchMethod(targetAssemblyPath, "PLGlobal", "Start", typeof(HarmonyInjector), "InitializeHarmony");
 
             Logger.Info("=== Copying Assemblies ===");
             CopyAssemblies(Path.GetDirectoryName(targetAssemblyPath));

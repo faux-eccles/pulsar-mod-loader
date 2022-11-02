@@ -3,6 +3,8 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 
+using PulsarModLoader;
+
 namespace PulsarModLoader.Patches
 {
     [HarmonyPatch(typeof(PLGlobal), "Start")]

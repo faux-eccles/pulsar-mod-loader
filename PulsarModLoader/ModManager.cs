@@ -56,7 +56,7 @@ namespace PulsarModLoader
             RuntimeHelpers.RunClassConstructor(typeof(PhotonNetwork).TypeHandle);
 
             IsOldVersion = false;
-
+            Logger.Info("End bootstrap");
 #if !DEBUG
             try
             {
